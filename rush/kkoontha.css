@@ -42,6 +42,10 @@ nav {
     height: 100%;
 }
 
+.logo {
+    text-decoration: none;
+    color: white;
+}
 nav h1 {
     width: 40%;
     font-size: 4em;

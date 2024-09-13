@@ -100,7 +100,6 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 .row{
-
     display: flex;
     min-width: 100%;
     justify-content: center;
@@ -152,9 +151,7 @@ progress {
 
 
     .row{
-        display: flex;
         flex-direction: column;
-        width: 100%;
         align-items: center;
         
     }
