@@ -1,0 +1,199 @@
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+nav { 
+    position: fixed;
+    top: 0;
+    background-color: #C96868;
+    width: 100%;
+    height: 5em;
+
+}
+
+.dropbtn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+}
+.dropdown-content {
+    display: none;
+    margin-top: 80px;
+    background-color: aliceblue;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;
+    height: 100%;
+}
+
+nav h1 {
+    width: 40%;
+    font-size: 4em;
+    font-family: "Pacifico", cursive;
+    color: aliceblue;
+    justify-self: left;
+}
+
+nav ul{
+    padding: 0;
+    width: 60%;
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+}
+
+nav ul li {
+    font-size: 2em;
+    margin-right: 3vw;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#home {
+    margin-top:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#home > * {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 4rem;
+}
+
+
+.fade-on-scroll {
+    opacity: 1;        /* Image starts fully visible */
+    transition: opacity 1.75s ease-out;  /* Smooth fading */
+    z-index: -1;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 5em;
+    margin-top: 50px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0;
+    padding: 30px 10%;
+    height: 100vh;
+}
+
+#about > * {
+    width: 300px;
+    height: 600px;
+}
+
+#about p, #contact p{
+    font-size: 1.5em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 30px 10%;
+    height: 100vh;
+    
+}
+
+#p-info, #skills, #exp , .container-contact{
+    padding: 20px;
+    margin: 0;
+    border: 0.25px solid grey;
+    border-radius: 1rem;
+    box-shadow: 19px 13px 22px -4px rgba(0,0,0,0.49);
+    background-color: white;
+}
+
+/* #contact ul{
+    list-style-type: none
+} */
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    nav ul li {
+        font-size: 1.5em;
+    }
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    #home > * {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #about {
+        font-size: 0.2em;
+    }
+
+    nav h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        margin: 0;
+    }
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+        height: 100vh;
+    }
+    #home > * {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #about {
+        padding-top: 100px;
+        flex-direction: column;
+        font-size: 0.75em;
+        justify-content: space-evenly;
+    }
+
+    #about > * {
+        height: auto;
+    }
+    #contact {
+        font-size: 0.75em;
+    }
+    .container {
+        justify-content: space-between;
+    }
+}
